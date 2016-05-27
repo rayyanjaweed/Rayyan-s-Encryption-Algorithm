@@ -1,21 +1,21 @@
 # Rayyan-s-Encryption-Algorithm
 
 
-Features of the algorithm
+##### Features of the algorithm
 
--It is a private key algorithm. Hence only the sender of the message and the receiver will have the key.
--It is a symmetric key algorithm hence the key required while encrypting the message and the key required while decrypting the cipher text will both be the same.
--It performs bitwise left circular shift bitwise XOR operations in different stages of encryption.
--The length of the user message to be encrypted can be as long as possible. (Until memory restricts)
--The user message can contain any alphabets, numbers and symbols possible.
+1. It is a private key algorithm. Hence only the sender of the message and the receiver will have the key.
+2. It is a symmetric key algorithm hence the key required while encrypting the message and the key required while decrypting the cipher text will both be the same.
+3. It performs bitwise left circular shift bitwise XOR operations in different stages of encryption.
+4. The length of the user message to be encrypted can be as long as possible. (Until memory restricts)
+5. The user message can contain any alphabets, numbers and symbols possible.
 -The private key can contain any alphabets, numbers and symbols possible.
--8 rounds of XOR operations is performed in total.
+6. 8 rounds of XOR operations is performed in total.
 
-Limitations of the algorithm
+##### Limitations of the algorithm
 
 There is just one limitation of this algorithm which is that the Private Key needs to be of just 8 characters.
 
-Steps in Encryption
+##### Steps in Encryption
 
 There are 5 steps
 
@@ -38,7 +38,7 @@ Creation of the cipher key is done by performing XOR on the bits on the private 
 This step is done in 8 rounds.
 In the first round the whole bytes of the shifted bits are XORed with the first character of the cipher key. In the second round the whole bytes obtained from the previous round are XORed with the second charcter of the cipher key. And so on the procedure is repeated for 8 rounds.
 
-Step to run the project:
+##### Step to run the project:
 
 -Import existing project in eclipse
 -Open ConstantValues. java file.
